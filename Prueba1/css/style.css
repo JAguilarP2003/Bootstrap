@@ -1,79 +1,83 @@
 * {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
+
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
+
 .contenedor {
-  max-width:1400px;
-  margin:auto;
+  max-width: 1400px;
+  margin: auto;
 }
 
 .header {
   margin-top: 100px;
-  margin-bottom:100px;
-}
-nav {
-  box-shadow:2px 2px 10px #000;
+  margin-bottom: 100px;
 }
 
-nav ul li  a {
-  color:#000;
+nav {
+  box-shadow: 2px 2px 10px #000;
+}
+
+nav ul li a {
+  color: #000;
   transition-duration: 0.15s;
   border: 1px solid transparent;
   border-radius: 30px;
 }
+
 nav ul li a:hover {
-  background:#28a745;
-  color:#fff;
+  background: #28a745;
+  color: #fff;
   border: 1px solid transparent;
   transition-duration: 0.15s;
 }
 
 .dropdown-item {
-    margin: 0;
-    padding: 4px 16px;
-    border: 1px solid transparent;
+  margin: 0;
+  padding: 4px 16px;
+  border: 1px solid transparent;
 }
 
 .show {
-    border-radius: 13px;
-    text-align: center;
+  border-radius: 13px;
+  text-align: center;
 }
 
 .collapsing {
-    text-align: center;
+  text-align: center;
 }
 
-.dropdown-divider{
-    width: 75%;
+.dropdown-divider {
+  width: 75%;
+  display: none;
+}
+
+@media (max-width: 991px) {
+  #logo {
     display: none;
-}
-
-@media (max-width:991px) {
-    #logo {
-        display:none;
-    }
-    nav ul {
-        width:75%;
-        margin:auto;
-    }
-    nav form {
-        width:75%;
-    }
-    nav ul li a {
-        text-align:center;
-        border-bottom:#000 1px solid;
-        margin:20px;
-    }
-    .dropdown-divider{
-        display: inline-block;
-    }
-    .dropdown-item {
-        text-align:center;
-    }
-    .dropdown-menu  {
-        background:none;
-        border:none;
-    }
+  }
+  nav ul {
+    width: 75%;
+    margin: auto;
+  }
+  nav form {
+    width: 75%;
+  }
+  nav ul li a {
+    text-align: center;
+    border-bottom: #000 1px solid;
+    margin: 20px;
+  }
+  .dropdown-divider {
+    display: inline-block;
+  }
+  .dropdown-item {
+    text-align: center;
+  }
+  .dropdown-menu {
+    background: none;
+    border: none;
+  }
 }
